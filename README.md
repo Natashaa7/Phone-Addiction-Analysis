@@ -28,20 +28,18 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 ├─ [inference.py](http://inference.py/)                    # Script for running inference
 ├─ requirements.txt
 ├─ .gitignore
-├─ [README.md](http://readme.md/) ```
-
+├─ [README.md](http://readme.md/) 
+```
 
 ## 🧰 Tools & Libraries
 
-Programming Language: Python
+- **Programming Language:** Python
+- **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn, XGBoost, Imbalanced-learn (SMOTE)
+- **Serialization:** Joblib (for saving models)
+- **Notebook Interface:** Jupyter Notebook
 
-Data Analysis & Visualization: Pandas, NumPy, Matplotlib, Seaborn
-
-Machine Learning: Scikit-learn, XGBoost, Imbalanced-learn (SMOTE)
-
-Serialization: Joblib (for saving models)
-
-Notebook Interface: Jupyter Notebook
+---
 
 ## 📝 Workflow & Notebooks
 
