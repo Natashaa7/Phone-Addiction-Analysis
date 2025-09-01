@@ -157,3 +157,5 @@ pip install -r requirements.txt
 - Screen time distributions and correlation heatmaps
 
 ![Workflow](docs/jupyter_workflow.gif) 
+![Workflow](docs/jupyter_workflow.gif)
+ 
