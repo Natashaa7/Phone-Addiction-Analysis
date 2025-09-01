@@ -7,7 +7,7 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 
 
 ## 🗂 Repository Structure 
-Phone-Addiction-Analysis/
+```Phone-Addiction-Analysis/
 │
 ├─ notebooks/
 │   ├─ EDA.ipynb                  # Exploratory Data Analysis
@@ -28,7 +28,7 @@ Phone-Addiction-Analysis/
 ├─ [inference.py](http://inference.py/)                    # Script for running inference
 ├─ requirements.txt
 ├─ .gitignore
-├─ [README.md](http://readme.md/)
+├─ [README.md](http://readme.md/) ```
 
 
 ## 🧰 Tools & Libraries
