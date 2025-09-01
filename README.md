@@ -38,6 +38,7 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 - **Machine Learning:** Scikit-learn, XGBoost, Imbalanced-learn (SMOTE)
 - **Serialization:** Joblib (for saving models)
 - **Notebook Interface:** Jupyter Notebook
+- **Deployment:** FastAPI, Swagger UI
 
 ---
 
