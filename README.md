@@ -9,28 +9,26 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 ## 🗂 Repository Structure 
 Phone-Addiction-Analysis/
 │
-├─ notebooks/                   # Jupyter notebooks for the analysis
-│   ├─ Base-model.ipynb         # Initial model setup and baseline testing
-│   ├─ Best-Model(Gradient-Boosting).ipynb  # Final selected model (Gradient Boosting), retraining & saving
-│   ├─ Comparison.ipynb         # Comparison of all models: Logistic Regression, Random Forest, Gradient Boosting, XGBoost
-│   ├─ Data-Preprocessing.ipynb # Data cleaning, handling missing values, encoding categorical variables
-│   ├─ EDA.ipynb                # Exploratory Data Analysis: visualizations, distributions, correlations
-│   ├─ Feature-Selection.ipynb  # Feature importance analysis and dimensionality reduction
-│   ├─ Gradient-Boosting.ipynb  # Gradient Boosting training and evaluation
-│   ├─ Infererence-best-model.ipynb # Using the saved Gradient Boosting model for predictions on new data
-│   ├─ Logistic-Regression.ipynb  # Logistic Regression training and evaluation
-│   ├─ Random-Forest.ipynb      # Random Forest training and evaluation
-│   ├─ XGBoost.ipynb            # XGBoost training and evaluation
+├─ notebooks/
+│   ├─ EDA.ipynb                  # Exploratory Data Analysis
+│   ├─ Data-Preprocessing.ipynb   # Data cleaning and encoding
+│   ├─ Feature-Selection.ipynb    # Feature importance and selection
+│   ├─ Base-model.ipynb           # Baseline models
+│   ├─ Comparison.ipynb           # Model performance comparison
+│   ├─ Logistic-Regression.ipynb  # Logistic Regression model
+│   ├─ Random-Forest.ipynb        # Random Forest model
+│   ├─ Gradient-Boosting.ipynb    # Gradient Boosting model
+│   ├─ XGBoost.ipynb              # XGBoost model
+│   ├─ Best-Model(Gradient-Boosting).ipynb  # Retrain best model and save
+│   ├─ Infererence-best-model.ipynb  # Predictions using saved model
 │
-├─ source/model/                # Contains saved ML models using joblib
-│
-├─ teen_phone_addiction_dataset.csv  # Dataset containing demographic, behavioral, and academic data
-│
-├─ app.py                       # Main application file (e.g., web app or API)
-├─ inference.py                 # Script for running model inference
-├─ .gitignore                   # Files/folders ignored by Git
-├─ README.md                    # Project documentation
-├─ requirements.txt             # Required Python packages
+├─ source/model/                   # Saved ML models using joblib
+├─ teen_phone_addiction_dataset.csv
+├─ [app.py](http://app.py/)                          # Web app or API entry point
+├─ [inference.py](http://inference.py/)                    # Script for running inference
+├─ requirements.txt
+├─ .gitignore
+├─ [README.md](http://readme.md/)
 
 
 ## 🧰 Tools & Libraries
