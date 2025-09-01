@@ -1,10 +1,14 @@
 # 📱 Phone Addiction Analysis
 
+## 👋 About
+
+Ever wondered how phone usage affects stress, sleep, or school performance?
+
+This project analyzes **teen smartphone addiction** patterns using data science and machine learning. We explore the data, test multiple models, and pick the best one to **predict addiction risk**.
 
 ## 📌 Overview
 
-This project analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves data preprocessing, exploratory data analysis, feature selection, model comparison, and inference. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
-
+This project analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves **data preprocessing, exploratory data analysis, feature selection, model comparison, and inference**. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
 
 ## 🗂 Repository Structure 
 ```Phone-Addiction-Analysis/
@@ -157,6 +161,5 @@ pip install -r requirements.txt
 - Feature importance plots
 - Screen time distributions and correlation heatmaps
 
-![Workflow](docs/jupyter_workflow.gif) 
-![Workflow](docs/jupyter_workflow.gif)
- 
+<img width="1422" height="416" alt="image" src="https://github.com/user-attachments/assets/ff778268-a3bd-4d4f-904b-a7681dd7ed54" />
+
