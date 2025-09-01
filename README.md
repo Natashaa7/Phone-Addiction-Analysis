@@ -1,10 +1,14 @@
 # 📱 Phone Addiction Analysis
 
+## 👋 About
+
+Ever wondered how phone usage affects stress, sleep, or school performance?
+
+This project analyzes **teen smartphone addiction** patterns using data science and machine learning. We explore the data, test multiple models, and pick the best one to **predict addiction risk**.
 
 ## 📌 Overview
 
-This project analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves data preprocessing, exploratory data analysis, feature selection, model comparison, and inference. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
-
+This project analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves **data preprocessing, exploratory data analysis, feature selection, model comparison, and inference**. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
 
 ## 🗂 Repository Structure 
 ```Phone-Addiction-Analysis/
@@ -38,6 +42,7 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 - **Machine Learning:** Scikit-learn, XGBoost, Imbalanced-learn (SMOTE)
 - **Serialization:** Joblib (for saving models)
 - **Notebook Interface:** Jupyter Notebook
+- **Deployment:** FastAPI, Swagger UI
 
 ---
 
@@ -67,7 +72,13 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 - Trains **baseline models** to get a performance benchmark
 - Simple initial implementations of classifiers
 
-### 5. **Comparison.ipynb**
+### 5. **Logistic-Regression.ipynb, Random-Forest.ipynb, Gradient-Boosting.ipynb, XGBoost.ipynb**
+
+- Train and evaluate each model **individually**
+- Include **line-by-line explanations**
+- Output model metrics and visualizations (e.g., confusion matrix heatmaps)
+  
+### 6. **Comparison.ipynb**
 
 - Implements **four ensemble methods and Logistic Regression**:
     - Logistic Regression
@@ -75,13 +86,6 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
     - Gradient Boosting
     - XGBoost
 - Compares models using metrics such as accuracy, confusion matrix, and balanced accuracy
-- Visualizes performance comparison
-
-### 6. **Logistic-Regression.ipynb, Random-Forest.ipynb, Gradient-Boosting.ipynb, XGBoost.ipynb**
-
-- Train and evaluate each model **individually**
-- Include **line-by-line explanations**
-- Output model metrics and visualizations (e.g., confusion matrix heatmaps)
 
 ### 7. **Best-Model(Gradient-Boosting).ipynb**
 
@@ -146,9 +150,9 @@ pip install -r requirements.txt
 
 ## 🎯 Key Findings
 
-- Teens using phones late at night have **higher stress levels**
-- Frequent app switching indicates **higher addiction level**
-- Gradient Boosting was the **best model** for prediction
+- Teens using phones late at night have **higher stress levels**.
+- Frequent app switching indicates **higher addiction level**.
+- Gradient Boosting was the **best model** for prediction.
 
 ## 📈 Visualizations
 
@@ -156,6 +160,41 @@ pip install -r requirements.txt
 - Feature importance plots
 - Screen time distributions and correlation heatmaps
 
-![Workflow](docs/jupyter_workflow.gif) 
-![Workflow](docs/jupyter_workflow.gif)
- 
+## 💻 Deployment
+
+- The best model is deployed using **FastAPI**
+- **SwaggerUI** allows easy API interaction and testing
+- Endpoints:
+    - `/predict` – Make predictions for new data
+    - `/docs` – Interactive API documentation via SwaggerUI
+
+---
+
+<img width="1278" height="819" alt="image" src="https://github.com/user-attachments/assets/da8c09d9-b463-4518-97e3-3fa6b105b03a" />
+
+## 🎯 Key Learnings
+
+- Handling imbalanced datasets with **SMOTE** improves model accuracy.
+- Feature selection significantly impacts model performance.
+- Ensemble methods like Gradient Boosting outperform simpler models in complex classification.
+- FastAPI makes ML model deployment quick and scalable.
+- SwaggerUI provides a user-friendly interface for testing APIs.
+
+---
+
+## 📝 Conclusion
+
+This project successfully demonstrates:
+
+- How smartphone usage can be analyzed to predict addiction risk
+- The process of **data preprocessing, model training, comparison, and selection**
+- Deployment of a trained model via **FastAPI** for real-time predictions
+
+The **Gradient Boosting model** provides the best predictions and can be used to identify teens at risk of phone addiction.
+
+---
+
+## 🔮 Future Plans
+
+- Utilize Docker to containerize this application, facilitating its convenient deployment.
+- Integrate model deployment with a **front-end dashboard** for easier accessibility.
