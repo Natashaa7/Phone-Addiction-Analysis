@@ -29,7 +29,6 @@ env/
 *.parquet
 
 # Models / joblib / pickle files
-*.joblib
 *.pkl
 *.h5
 *.sav
