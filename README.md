@@ -1,15 +1,34 @@
 # 📱 Phone Addiction Analysis
 
-## 👋 About
+## 📌 Overview
 
 Ever wondered how phone usage affects stress, sleep, or school performance?
 
-This project analyzes **teen smartphone addiction** patterns using data science and machine learning. We explore the data, test multiple models, and pick the best one to **predict addiction risk**.
+This project analyzes **teen smartphone addiction** patterns using data science and machine learning. We explore the data, test multiple models, and pick the best one to **predict addiction risk**. It analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves **data preprocessing, exploratory data analysis, feature selection, model comparison, and inference**. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
 
-## 📌 Overview
+## 📊 Dataset
 
-This project analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves **data preprocessing, exploratory data analysis, feature selection, model comparison, and inference**. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
+This project uses the [**Teen Phone Addiction Dataset**](https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction?utm_source=chatgpt.com) from Kaggle.
 
+### 📁 Dataset Overview:
+
+- **Rows:** 300+ (teens surveyed)
+- **Columns:** 15 (demographic, behavioral, and academic features)
+- **Key Features:**
+    - `Gender` – Male/Female
+    - `Age` – Age of the teen
+    - `Sleep Duration` – Average hours of sleep per night
+    - `Study Hours` – Average study time per day
+    - `Screen Time` – Daily smartphone usage in hours
+    - `Social Media Usage` – Social media usage (hours)
+    - `GPA` – Academic performance indicator
+    - `Addiction Level` – Target label (Low, Medium, High)
+
+### 📥 How to Get the Dataset:
+
+1. Download from Kaggle: [Teen Phone Addiction Dataset]([https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction])
+2. Place the file `teen_phone_addiction_dataset.csv` inside the **`notebooks/`** folder of this repository.
+   
 ## 🗂 Repository Structure 
 ```Phone-Addiction-Analysis/
 │
