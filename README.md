@@ -1,38 +1,63 @@
 # 📱 Phone Addiction Analysis
 
-## 👋 About
+## 📌 Overview
 
 Ever wondered how phone usage affects stress, sleep, or school performance?
 
-This project analyzes **teen smartphone addiction** patterns using data science and machine learning. We explore the data, test multiple models, and pick the best one to **predict addiction risk**.
+This project analyzes **teen smartphone addiction** patterns using data science and machine learning. We explore the data, test multiple models, and pick the best one to **predict addiction risk**. It analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves **data preprocessing, exploratory data analysis, feature selection, model comparison, and inference**. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
 
-## 📌 Overview
+## 📊 Dataset
 
-This project analyzes smartphone addiction patterns in teenagers, identifying behavioral and demographic factors that contribute to addiction. The workflow involves **data preprocessing, exploratory data analysis, feature selection, model comparison, and inference**. The project uses multiple machine learning models to classify users into addiction risk categories and selects the best-performing model (Gradient Boosting).
+This project uses the [**Teen Phone Addiction Dataset**](https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction?utm_source=chatgpt.com) from Kaggle.
 
+### 📁 Dataset Overview:
+
+- **Rows:** 300+ (teens surveyed)
+- **Columns:** 15 (demographic, behavioral, and academic features)
+- **Key Features:**
+    - `Gender` – Male/Female
+    - `Age` – Age of the teen
+    - `Sleep Duration` – Average hours of sleep per night
+    - `Study Hours` – Average study time per day
+    - `Screen Time` – Daily smartphone usage in hours
+    - `Social Media Usage` – Social media usage (hours)
+    - `GPA` – Academic performance indicator
+    - `Addiction Level` – Target label (Low, Medium, High)
+
+### 📥 How to Get the Dataset:
+
+1. Download from Kaggle: [Teen Phone Addiction Dataset]([https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction])
+2. Place the file `teen_phone_addiction_dataset.csv` inside the **`notebooks/`** folder of this repository.
+   
 ## 🗂 Repository Structure 
-```Phone-Addiction-Analysis/
+```python
+📁 Phone-Addiction-Analysis
 │
-├─ notebooks/
-│   ├─ EDA.ipynb                  # Exploratory Data Analysis
-│   ├─ Data-Preprocessing.ipynb   # Data cleaning and encoding
-│   ├─ Feature-Selection.ipynb    # Feature importance and selection
-│   ├─ Base-model.ipynb           # Baseline models
-│   ├─ Comparison.ipynb           # Model performance comparison
-│   ├─ Logistic-Regression.ipynb  # Logistic Regression model
-│   ├─ Random-Forest.ipynb        # Random Forest model
-│   ├─ Gradient-Boosting.ipynb    # Gradient Boosting model
-│   ├─ XGBoost.ipynb              # XGBoost model
-│   ├─ Best-Model(Gradient-Boosting).ipynb  # Retrain best model and save
-│   ├─ Infererence-best-model.ipynb  # Predictions using saved model
+│── 📁 CLI_Inference/             # Command-line interface for predictions
+│    └── [inference.py]             # Python script to run model inference via CLI
 │
-├─ source/model/                   # Saved ML models using joblib
-├─ teen_phone_addiction_dataset.csv
-├─ [app.py](http://app.py/)                          # Web app or API entry point
-├─ [inference.py](http://inference.py/)                    # Script for running inference
-├─ requirements.txt
-├─ .gitignore
-├─ [README.md](http://readme.md/) 
+│── 📁 model/                     # Contains saved ML models
+│    └── gb_tuned.joblib          # Final Gradient Boosting model (best performer)
+│
+│── 📁 notebooks/                 # Jupyter notebooks showing full workflow
+│    ├── 1_EDA.ipynb              # Exploratory Data Analysis (visualizations, insights)
+│    ├── 2_Data-Preprocessing.ipynb  # Data cleaning, encoding, scaling
+│    ├── 3_Base-model.ipynb       # Logistic Regression baseline model
+│    ├── 4_Feature-Selection.ipynb   # Feature importance & reduction
+│    ├── 5_Random-Forest.ipynb    # Random Forest training & evaluation
+│    ├── 6_XGBoost.ipynb          # XGBoost training & evaluation
+│    ├── 7_Gradient-Boosting.ipynb # Gradient Boosting training
+│    ├── 8_Logistic-Regression.ipynb # Logistic Regression detailed analysis
+│    ├── 9_Comparison.ipynb       # Comparison of all models (metrics, graphs)
+│    ├── 10_Best-Model(Gradient-Boosting).ipynb # Retraining tuned GB model
+│    └── 11_Inference-best-model.ipynb # Inference notebook using final model
+│
+│── 📁 source/                    # FastAPI backend application
+│    └── [app.py]                   # FastAPI app with SwaggerUI for API deployment
+│
+│── .gitignore                    # Ignore unnecessary files (envs, cache, etc.)
+│── requirements.txt              # List of required Python dependencies
+│── [README.md]                    # Project documentation (you are reading this)
 ```
 
 ## 🧰 Tools & Libraries
@@ -101,7 +126,7 @@ This project analyzes smartphone addiction patterns in teenagers, identifying be
 
 ## 💾 Saving & Loading Models
 
-- Models are saved in **`source/model`** using `joblib` for efficient serialization:
+- Models are saved in **`model`** using `joblib` for efficient serialization:
 
 ```python
 import joblib
@@ -128,7 +153,16 @@ cd Phone-Addiction-Analysis
 
 ```
 
-1. Install dependencies:
+2. Create environment:
+   
+```bash
+python -m venv venv
+source venv/bin/activate   # (Linux/Mac)
+venv\Scripts\activate      # (Windows)
+
+```
+
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
