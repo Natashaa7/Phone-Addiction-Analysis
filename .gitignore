@@ -23,12 +23,14 @@ env/
 .ipynb_checkpoints/
 
 # Data files (common large files)
+*.csv
 *.xlsx
 *.xls
 *.json
 *.parquet
 
 # Models / joblib / pickle files
+*.joblib
 *.pkl
 *.h5
 *.sav
